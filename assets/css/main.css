@@ -3665,6 +3665,24 @@
 			margin: 0 0 0.5em 0;
 		}
 
+	#main-servicios > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/servicios.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/servicios.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/servicios.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/servicios.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main-servicios > header h2 {
+			font-size: 3em;
+			margin: 0 0 0.5em 0;
+		}
+
 		#main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
