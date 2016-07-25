@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery-2.2.4.min.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -19,18 +20,24 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
+				<!-- Header href="generic.html" -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">GESTISAC</a></h1>
 						<nav id="nav">
-							<ul>
+							<ul id="m">
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Inicio</a></li>
-											<li><a href="generic.html">Servicios</a></li>
-											<li><a href="#">Nosotros</a></li>
+											<li><a href="#">Servicios</a>
+												<ul>
+													<li style="margin-left:40px"><a href="#">Infraestructura TI</a></li>
+													<li style="margin-left:40px"><a href="#">Gestión Humana</a></li>
+													<li style="margin-left:40px"><a href="#">Gestión Integral de Inventarios</a></li>
+												</ul>
+											</li>
+											<li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
 											<li><a href="elements.html">GESTISAC</a></li>
 											<li><a href="contacto.html">Contacto</a></li>
 										</ul>
@@ -176,7 +183,18 @@ Nuestro compromiso es satisfacer las necesidades de nuestros clientes y la mejor
 					</footer>
 
 			</div>
-
+<script>
+$(document).on('ready', function(){
+	$('#m li a').click(function(event){
+		var elem = $(this).next();
+		if(elem.is('ul')){
+			event.preventDefault();
+			$('#m ul:visible').not(elem).slideUp();
+			elem.slideToggle();
+		}
+	});
+});
+</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -185,6 +203,5 @@ Nuestro compromiso es satisfacer las necesidades de nuestros clientes y la mejor
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
