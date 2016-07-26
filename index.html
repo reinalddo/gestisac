@@ -11,9 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="assets/js/jquery-2.2.4.min.js"></script>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    	<script src="assets/js/jquery-2.2.4.min.js"></script>
+
 	</head>
 	<body class="landing">
 
@@ -51,39 +50,27 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>GESTISAC</h2>
-							<p>LOGISTICA EFICICIENTE, <br>
+							<p>LOGISTICA EFICIENTE, <br>
 							   GESTION Y PLANEAMIENTO.<br>
-							   PLANEAMIENTO DE PROYECTOS</p>
+							   DE PROYECTOS</p>
 							<!--
 							<ul class="actions">
 								<li><a href="#" class="button special">Activate</a></li>
 							</ul>
 							-->
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+						<a href="#one" class="more scrolly">VER MÁS</a>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style1 special" style="background:#FFF">
-						<div class="inner">
-							<!--
-							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-							-->
-							<div class="image"><img src="images/cronograma.jpg" alt="" /></div>
-						</div>
+					<section id="one" class="style1 special">
+
+							<img src="images/imagen1.jpg" alt="" width="100%" />
+							<img src="images/imagen2.jpg" alt="" width="100%" />
+							<img src="images/imagen3.jpg" alt="" width="100%" />
 					</section>
 
-				<!-- Two -->
+				<!-- Two --
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/mision.jpg" alt="" /></div><div class="content">
@@ -181,6 +168,7 @@
 					</footer>
 
 			</div>
+
 <script>
 $(document).on('ready', function(){
 	$('#m li a').click(function(event){
@@ -190,8 +178,10 @@ $(document).on('ready', function(){
 			$('#m ul:visible').not(elem).slideUp();
 			elem.slideToggle();
 		}
+		$('.carousel').carousel({
+  			interval: 2000
+		});
 	});
-});
 </script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
